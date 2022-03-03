@@ -1,14 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-header{
-  background-color: aqua;
+main{
+  margin: 0 10rem 0 10rem;
 }
 
-section{
-  padding: 50px;
-  border: solid 1px red;
-  margin: 50px;
+ul#menu{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+ul#menu li{
+  padding: 0.5rem;
+  color: #fff;
+}
+
+ul#menu li i{
+  font-size: 2rem;
+}
+
+nav{
+  background-color: rgb(2, 90, 112);
+}
+
+ul#menu li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#menu li:hover{
+  transform: scale(1.2);
+}
+
+header img{
+  width: 100%;
+}
+
+header h1{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+section#cursos h2{
+  text-align: center;
 }
