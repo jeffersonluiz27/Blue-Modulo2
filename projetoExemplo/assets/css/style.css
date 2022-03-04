@@ -56,13 +56,46 @@ header p{
 
 section#cursos h2{
   text-align: center;
-  padding: 1rem;
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+
+section#cursos{
+  margin-bottom: 10rem;
 }
 
 section#cards{
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
 }
 
 .card{
+  width: 20rem;
+  box-shadow: 5px 5px 5px 5px #00000020;
+  padding:1rem;
+  transition: transform .5s ease-in-out;
+  
+}
 
+.card img{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card h3{
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.card p{
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.card:hover{
+  transform: scale(1.1);
 }
