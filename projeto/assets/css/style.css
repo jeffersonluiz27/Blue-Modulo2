@@ -10,6 +10,10 @@ h1, h2, h3{
   font-weight: 600;
 }
 
+span#ano{
+  font-weight: 300;
+}
+
 header{
   background-color:#021e34;
   height: 4rem;
@@ -20,24 +24,40 @@ header{
 }
 
 section#main-section{
+  padding-top: 2rem;
+}
+
+div#banner{
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+section#custon-bg{
+  display: flex;
+  background-image: linear-gradient(to right, rgba(220.5, 220.5, 220.5, 1) 150px, rgba(220.5, 220.5, 220.5, 0.84) 100%);
   padding: 2rem;
 }
 
-section#banner{
-  display: flex;
-  background-image: url('https://www.themoviedb.org/t/p/w533_and_h300_bestv2/a6ptrTUH1c5OdWanjyYtAkOuYD0.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(to right, rgba(220.5, 220.5, 220.5, 1) 150px, rgba(220.5, 220.5, 220.5, 0.84) 100%);
+section#poster figure figcaption{
+  text-align: center;
 }
 
 section#content{
-  padding: 1rem;
+  padding: 3rem;
   align-self: center;
 }
 
 section#classificacao{
   padding-bottom: 2rem;
+}
+
+span#idade{
+  border: .1rem solid;
+  padding: .1rem;
+  text-align: center;
+  margin-right: .5rem;
 }
 
 section#sinopse h3{
@@ -48,8 +68,15 @@ section#titulo h2{
   padding-bottom: .7rem
 }
 
+section#elenco{
+  margin-top: 1rem;
+}
+
 section#trailer{
-  padding-top: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section#trailer h3{
@@ -60,6 +87,6 @@ section#trailer h3{
 section#elenco div a{
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* #021e34 */
