@@ -9,9 +9,16 @@ app.get('/', function (req, res) {
 	res.send('Hello World');
 });
 
-app.get('/index', function (req, res) {
-	res.render('index');
+app.get('/index', (req, res) => {
+	const devList = ['Backend', 'Frontend', 'Fullstack'];
+	const analyticsList = ['Engenharia de dados', 'Ciência de dados'];
+	res.render('index', {
+		titulo: 'Blue',
+		devList: devList,
+		analyticsList: analyticsList,
+	});
 });
+
 app.post('/', function (req, res) {
 	res.send('Post');
 });
