@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 main{
   margin: 0 10rem 0 10rem;
 }
@@ -28,6 +32,8 @@ ul#menu li i{
 
 nav{
   background-color: rgb(2, 90, 112);
+  position: fixed;
+  width: 100%;
 }
 
 ul#menu li a{
@@ -41,6 +47,7 @@ ul#menu li:hover{
 
 header img{
   width: 100%;
+  margin-top: 3.4rem;
 }
 
 header h1{
@@ -115,3 +122,77 @@ section#imagens p{
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
+
+section#inscrevase{
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#inscrevase h2{
+  text-align: center;
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+
+section#inscrevase form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+section#inscrevase form input{
+  width: 100%;
+  padding: .5rem;
+  margin: .3rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
+
+}
+
+section#inscrevase form label{
+  margin: 0 1rem 0 1rem;
+  font-size: 1.5rem;
+  color: #0071a5;
+}
+
+section#inscrevase form button{
+  border: solid 0.15rem #0071a5;
+  padding: .5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  justify-content:center;
+  margin: 0 auto;
+  background-color:#fff;
+  color: #0071a5;
+  width:20%;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+section#inscrevase form button:hover{
+  background-color:#0071a5;
+  color:#fff;
+
+}
+
+footer{
+  background-color:rgb(2, 90, 112);
+  padding: 4rem;
+  text-align: center;
+  color:#fff;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+}
+
+footer a{
+  text-decoration: none;
+  color:#fff;
+}
+
+footer a:hover{
+  color:rgb(252, 175, 255);
+}
+
+
