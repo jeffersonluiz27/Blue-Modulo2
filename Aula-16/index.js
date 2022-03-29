@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 require('dotenv').config;
+const Filme = require('./model/filme');
 
 const port = process.env.PORT || 3000;
 
@@ -9,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded());
 
-const filmes = [
+/* const filmes = [
 	{
 		id: 1,
 		nome: 'Harry Potter e a Pedra Filosofal',
@@ -23,9 +24,11 @@ const filmes = [
 		imagem:
 			'https://i.pinimg.com/originals/e5/e8/cf/e5e8cfc267a11c8ae6ba728b4537543f.jpg',
 	},
-];
+]; */
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+	const filmes = await Filme.findAll();
+
 	res.render('index', {
 		filmes,
 	});
