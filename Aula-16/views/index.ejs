@@ -10,21 +10,29 @@
 </head>
 
 <body>
-  <h1>Filmes</h1>
-  <% filmes.forEach(item=> { %>
-    <h2>
-      <%= item.nome %>
-    </h2>
-    <p>
-      <%= item.descricao %>
-    </p>
-    <img src="<%= item.imagem%>" alt="">
-    <% }) %>
-
-
-
-
-      <script src="/js/script.js"></script>
+  <header>
+    <h1>Filmes</h1>
+    <nav><a href="/">Home</a></nav>
+    </header>
+    <main>
+      <div class="container">
+        <% filmes.forEach(item=> { %>
+          <div class="item">
+            <h2>
+              <%= item.nome %>
+            </h2>
+            <p>
+              <%= item.descricao %>
+            </p>
+            <a href="/filmes/<%= item.id %>"><img src="<%= item.imagem %>" alt="capa do filme"></a>
+          </div>
+          <% }) %>
+      </div>
+      </main>
+      <footer>
+        <p>Lista de filmes - 2022</p>
+      </footer>
+      <script src="./JS/script.js"></script>
 </body>
 
 </html>
