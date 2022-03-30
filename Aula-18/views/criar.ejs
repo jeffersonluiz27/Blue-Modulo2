@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Filmes</h1>
+    <nav><a href="/">Home</a><a href="/criar">Criar</a></nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="item">
+        <span>
+          <% if(mensagem !='' ){mensagem} %>
+        </span>
+        <form action="/criar" method="post">
+          <input type="text" placeholder="Digite o nome do filme" name="nome">
+          <textarea placeholder="Digite a descrição do filme" name="descricao" id="" cols="30" rows="10"></textarea>
+          <input type="text" placeholder="Digite a url da capa" name="imagem">
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Lista de filmes - 2022</p>
+  </footer>
+  <script src="./JS/script.js"></script>
+
+</body>
+
+</html>
